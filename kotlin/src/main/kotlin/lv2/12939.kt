@@ -9,7 +9,7 @@ package lv2
  * s에는 둘 이상의 정수가 공백으로 구분되어 있습니다.
  */
 
-class Solution {
+class Solution12939 {
     fun solution(s: String): String {
         return s.split(" ").map { it.toInt() }.sorted().let {
             "${it[0]} ${it[it.size - 1]}"
